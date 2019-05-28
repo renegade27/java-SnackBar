@@ -1,6 +1,6 @@
 package snackBar;
 
-public static void Snack {
+public class Snack {
 
     private static int id = 0;
     public String name;
@@ -49,13 +49,13 @@ public static void Snack {
 
         //Methods
         public void addQuantity(int amount) {
-            this.quantity += amount
+            this.quantity += amount;
         }
         public void buySnack(int amount) {
-            this.quantity -= amount
+            this.quantity -= amount;
         }
-        public void totalCost(int quantity) {
-            return this.cost * quantity
+        public double totalCost(int quantity) {
+            return this.cost * quantity;
         }
 
 }

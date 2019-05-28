@@ -1,20 +1,20 @@
 package snackBar;
 
-public static void Customer {
+public class Customer {
 
     private static int id = 0;
-    public int cash;
+    public double cash;
     public String name;
 
-    public Customer(int cash, String name) {
+    public Customer(double cash, String name) {
         this.cash = cash;
         this.name = name;
     }
         //Getters
-        public getCash() {
+        public double getCash() {
             return cash;
         }
-        public getName() {
+        public String getName() {
             return name;
         }
 
@@ -24,10 +24,10 @@ public static void Customer {
         }
 
         //Methods
-        public void addCash(int amount) {
+        public void addCash(double amount) {
             this.cash += amount;
         }
-        public void payCash(int amount) {
+        public void payCash(double amount) {
             this.cash -= amount;
         }
 }

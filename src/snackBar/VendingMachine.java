@@ -1,6 +1,6 @@
 package snackBar;
 
-public static void VendingMachine {
+public class VendingMachine {
 
     private static int id = 0;
     public String name;
@@ -9,5 +9,9 @@ public static void VendingMachine {
         this.id = id++;
         this.name = name;
     }
+
+        public String getName() {
+            return name;
+        }
 
 }
