@@ -2,21 +2,22 @@ package snackBar;
 
 public class Main {
     private static void performOps() {
-        //Customers
-        Customer c1 = new Customer(45.25, "Peggy Hill");
-        Customer c2 = new Customer(33.14, "Hank Hill");
-
-        //Snacks
-        Snack s1 = new Snack("Chips", 36, 1.75, 0);
-        Snack s2 = new Snack("Chocolate Bar", 36, 1.00, 0);
-        Snack s3 = new Snack("Pretzel", 30, 2.00, 0);
-        Snack s4 = new Snack("Soda", 24, 2.50, 2);
-        Snack s5 = new Snack("Water", 20, 2.75, 2);
 
         //Machines
         VendingMachine food = new VendingMachine("Frito Lay");
         VendingMachine office = new VendingMachine("Quik Office");
         VendingMachine drink = new VendingMachine("Coca-Cola");
+
+        //Customers
+        Customer c1 = new Customer(45.25, "Peggy Hill");
+        Customer c2 = new Customer(33.14, "Hank Hill");
+
+        //Snacks
+        Snack s1 = new Snack("Chips", 36, 1.75, food.getId());
+        Snack s2 = new Snack("Chocolate Bar", 36, 1.00, food.getId());
+        Snack s3 = new Snack("Pretzel", 30, 2.00, food.getId());
+        Snack s4 = new Snack("Soda", 24, 2.50, drink.getId());
+        Snack s5 = new Snack("Water", 20, 2.75, drink.getId());
 
         //1
         c1.payCash(s4.totalCost(3));

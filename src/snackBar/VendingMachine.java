@@ -10,8 +10,21 @@ public class VendingMachine {
         this.name = name;
     }
 
+        //Getters
         public String getName() {
             return name;
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        //Setters
+        public void setName(String name) {
+            this.name = name;
+        }
+        public void setId(int id) {
+            this.id = id;
         }
 
 }
