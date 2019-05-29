@@ -1,5 +1,7 @@
 # Project Snack Bar:
 
+Initial Commit - Jacob Ryans
+
 A student that completes this project shows that they can:
 
 * use the Java Development Kit (JDK)
